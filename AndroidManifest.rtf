@@ -1,0 +1,264 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue254;\red15\green112\blue3;\red0\green0\blue109;
+\red82\green0\blue103;\red0\green0\blue109;\red15\green112\blue3;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c99608;\csgenericrgb\c5882\c43922\c1176;\csgenericrgb\c0\c0\c42745;
+\csgenericrgb\c32157\c0\c40392;\csgenericrgb\c0\c0\c42745;\csgenericrgb\c5882\c43922\c1176;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15240\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <?xml version="1.0" encoding="utf-8"?>\
+<resources>\
+    <color name="colorPrimary">#FF9800</color>\
+    <color name="colorPrimaryDark">#F57C00</color>\
+    <color name="colorAccent">#FF5722</color>\
+    <color name="colorPrimaryLight">#FFE0B2</color>\
+    <color name="colorPrimaryText">#212121</color>\
+    <color name="colorSecondaryText">#757575</color>\
+    <color name="colorIcons">#212121</color>\
+    <color name="colorDivider">#BDBDBD</color>\
+</resources>\
+\
+<resources>\
+    <dimen name="fab_margin">16dp</dimen>\
+    <dimen name="default_margin">16dp</dimen>\
+    <!-- Default screen margins, per the Android Design guidelines. -->\
+    <dimen name="activity_horizontal_margin">16dp</dimen>\
+    <dimen name="activity_vertical_margin">16dp</dimen>\
+    <dimen name="default_image_size">120dp</dimen>\
+    <dimen name="image_big_side">180dp</dimen>\
+\
+</resources>\
+\
+<?xml version="1.0" encoding="utf-8"?>\
+<resources>\
+    <string name="news_api_key">fecf4feeffa64e4da682e7d268612ce5</string>\
+</resources>\
+\
+<resources>\
+    <string name="app_name">CatchUp</string>\
+    <string name="action_settings">Settings</string>\
+    <string name="onboarding_welcome_text">Welcome to CatchUp!</string>\
+    <string name="onboarding_start_button_title">Start</string>\
+    <string name="title_activity_main">CatchUp</string>\
+    <string name="title_home">Home</string>\
+    <string name="title_sources">Sources</string>\
+    <string name="title_favorites">Favorites</string>\
+    <string name="title_settings">Settings</string>\
+\
+    <!-- TODO: Remove or change this placeholder text -->\
+    <string name="hello_blank_fragment">Hello blank fragment</string>\
+    <string name="mock_text">Mock Text</string>\
+    <string name="title_activity_article">About Article</string>\
+    <string name="title_activity_source">About Source</string>\
+</resources>\
+\
+<resources>\
+\
+    <!-- Base application theme. -->\
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">\
+        <!-- Customize your theme here. -->\
+        <item name="colorPrimary">@color/colorPrimary</item>\
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>\
+        <item name="colorAccent">@color/colorAccent</item>\
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>\
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>\
+        <item name="android:horizontalDivider">@color/colorDivider</item>\
+    </style>\
+\
+    <style name="AppTheme.NoActionBar">\
+        <item name="windowActionBar">false</item>\
+        <item name="windowNoTitle">true</item>\
+    </style>\
+\
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />\
+\
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />\
+\
+</resources>\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\i \cf0 <?
+\f2\i0\b \cf2 xml version=\cf3 "1.0" \cf2 encoding=\cf3 "utf-8"
+\f1\i\b0 \cf0 ?>\
+
+\f3\i0 <
+\f2\b \cf4 menu \cf2 xmlns:\cf5 android\cf2 =\cf3 "http://schemas.android.com/apk/res/android"
+\f3\b0 \cf0 >\
+\
+    <
+\f2\b \cf4 item\
+        \cf5 android\cf2 :id=\cf3 "@+id/navigation_home"\
+        \cf5 android\cf2 :icon=\cf3 "@drawable/ic_home_black_24dp"\
+        \cf5 android\cf2 :title=\cf3 "@string/title_home" 
+\f3\b0 \cf0 />\
+\
+    <
+\f2\b \cf4 item\
+        \cf5 android\cf2 :id=\cf3 "@+id/navigation_sources"\
+        \cf5 android\cf2 :icon=\cf3 "@drawable/ic_import_contacts_black_24dp"\
+        \cf5 android\cf2 :title=\cf3 "@string/title_sources" 
+\f3\b0 \cf0 />\
+\
+    <
+\f2\b \cf4 item\
+        \cf5 android\cf2 :id=\cf3 "@+id/navigation_favorites"\
+        \cf5 android\cf2 :icon=\cf3 "@drawable/ic_favorite_black_24dp"\
+        \cf5 android\cf2 :title=\cf3 "@string/title_favorites" 
+\f3\b0 \cf0 />\
+    <
+\f2\b \cf4 item\
+        \cf5 android\cf2 :id=\cf3 "@+id/navigation_settings"\
+        \cf5 android\cf2 :icon=\cf3 "@drawable/ic_settings_black_24dp"\
+        \cf5 android\cf2 :title=\cf3 "@string/title_settings" 
+\f3\b0 \cf0 />\
+\
+</
+\f2\b \cf4 menu
+\f3\b0 \cf0 >\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\i \cf0 <?
+\f2\i0\b \cf2 xml version=\cf3 "1.0" \cf2 encoding=\cf3 "utf-8"
+\f1\i\b0 \cf0 ?>\
+
+\f3\i0 <
+\f2\b \cf4 manifest \cf2 xmlns:\cf5 android\cf2 =\cf3 "http://schemas.android.com/apk/res/android"\
+    \cf2 package=\cf3 "pe.edu.upc.catchup"
+\f3\b0 \cf0 >\
+\
+    <
+\f2\b \cf4 uses-permission \cf5 android\cf2 :name=\cf3 "android.permission.INTERNET" 
+\f3\b0 \cf0 />\
+\
+    <
+\f2\b \cf4 application\
+        \cf5 android\cf2 :name=\cf3 ".CatchUpApp"\
+        \cf5 android\cf2 :allowBackup=\cf3 "true"\
+        \cf5 android\cf2 :icon=\cf3 "@mipmap/ic_launcher"\
+        \cf5 android\cf2 :label=\cf3 "@string/app_name"\
+        \cf5 android\cf2 :roundIcon=\cf3 "@mipmap/ic_launcher_round"\
+        \cf5 android\cf2 :supportsRtl=\cf3 "true"\
+        \cf5 android\cf2 :theme=\cf3 "@style/AppTheme"
+\f3\b0 \cf0 >\
+        <
+\f2\b \cf4 meta-data \cf5 android\cf2 :name=\cf3 "DATABASE" \cf5 android\cf2 :value=\cf3 "catchup.db" 
+\f3\b0 \cf0 />\
+        <
+\f2\b \cf4 meta-data \cf5 android\cf2 :name=\cf3 "VERSION" \cf5 android\cf2 :value=\cf3 "1" 
+\f3\b0 \cf0 />\
+        <
+\f2\b \cf4 meta-data \cf5 android\cf2 :name=\cf3 "QUERY_LOG" \cf5 android\cf2 :value=\cf3 "true" 
+\f3\b0 \cf0 />\
+        <
+\f2\b \cf4 meta-data \cf5 android\cf2 :name=\cf3 "DOMAIN_PACKAGE_NAME" \cf5 android\cf2 :value=\cf3 "pe.edu.upc.catchup.models" 
+\f3\b0 \cf0 />\
+        <
+\f2\b \cf4 activity\
+            \cf5 android\cf2 :name=\cf3 ".viewcontrollers.actitivities.OnboardingActivity"\
+            \cf5 android\cf2 :label=\cf3 "@string/app_name"\
+            \cf5 android\cf2 :theme=\cf3 "@style/AppTheme.NoActionBar"
+\f3\b0 \cf0 />\
+        <
+\f2\b \cf4 activity\
+            \cf5 android\cf2 :name=\cf3 ".viewcontrollers.actitivities.MainActivity"\
+            \cf5 android\cf2 :label=\cf3 "@string/title_activity_main"
+\f3\b0 \cf0 >\
+        <
+\f2\b \cf4 intent-filter
+\f3\b0 \cf0 >\
+            <
+\f2\b \cf4 action \cf5 android\cf2 :name=\cf3 "android.intent.action.MAIN" 
+\f3\b0 \cf0 />\
+\
+            <
+\f2\b \cf4 category \cf5 android\cf2 :name=\cf3 "android.intent.category.LAUNCHER" 
+\f3\b0 \cf0 />\
+        </
+\f2\b \cf4 intent-filter
+\f3\b0 \cf0 >\
+        </
+\f2\b \cf4 activity
+\f3\b0 \cf0 >\
+        <
+\f2\b \cf4 activity\
+            \cf5 android\cf2 :name=\cf3 ".viewcontrollers.actitivities.ArticleActivity"\
+            \cf5 android\cf2 :label=\cf3 "@string/title_activity_article"\
+            \cf5 android\cf2 :parentActivityName=\cf3 ".viewcontrollers.actitivities.MainActivity"\
+            \cf5 android\cf2 :theme=\cf3 "@style/AppTheme.NoActionBar"
+\f3\b0 \cf0 >\
+            <
+\f2\b \cf4 meta-data\
+                \cf5 android\cf2 :name=\cf3 "android.support.PARENT_ACTIVITY"\
+                \cf5 android\cf2 :value=\cf3 "pe.edu.upc.catchup.viewcontrollers.actitivities.MainActivity" 
+\f3\b0 \cf0 />\
+        </
+\f2\b \cf4 activity
+\f3\b0 \cf0 >\
+        <
+\f2\b \cf4 activity\
+            \cf5 android\cf2 :name=\cf3 ".viewcontrollers.actitivities.SourceActivity"\
+            \cf5 android\cf2 :label=\cf3 "@string/title_activity_source"\
+            \cf5 android\cf2 :parentActivityName=\cf3 ".viewcontrollers.actitivities.MainActivity"\
+            \cf5 android\cf2 :theme=\cf3 "@style/AppTheme.NoActionBar"
+\f3\b0 \cf0 >an\
+            <
+\f2\b \cf4 meta-data\
+                \cf5 android\cf2 :name=\cf3 "android.support.PARENT_ACTIVITY"\
+                \cf5 android\cf2 :value=\cf3 "pe.edu.upc.catchup.viewcontrollers.actitivities.MainActivity" 
+\f3\b0 \cf0 />\
+        </
+\f2\b \cf4 activity
+\f3\b0 \cf0 >\
+    </
+\f2\b \cf4 application
+\f3\b0 \cf0 >\
+\
+</
+\f2\b \cf4 manifest
+\f3\b0 \cf0 >\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b \cf6 package 
+\f3\b0 \cf0 pe.edu.upc.catchup\
+\
+
+\f2\b \cf6 import 
+\f3\b0 \cf0 com.androidnetworking.AndroidNetworking\
+
+\f2\b \cf6 import 
+\f3\b0 \cf0 com.orm.SugarApp\
+\
+
+\f2\b \cf6 class 
+\f3\b0 \cf0 CatchUpApp : SugarApp() \{\
+    
+\f2\b \cf6 override fun 
+\f3\b0 \cf0 onCreate() \{\
+        
+\f2\b \cf6 super
+\f3\b0 \cf0 .onCreate()\
+        AndroidNetworking.initialize(getApplicationContext())\
+    \}\
+\}\
+\
+implementation 
+\f2\b \cf7 'com.amitshekhar.android:android-networking:1.0.2'\
+
+\f3\b0 \cf0 implementation 
+\f2\b \cf7 'com.github.satyan:sugar:1.5'\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\b0 \cf0 \
+And\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+\
+}
